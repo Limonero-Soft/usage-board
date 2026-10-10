@@ -1,0 +1,6 @@
+{
+  "name": "claude-usage-dashboard",
+  "version": "0.1.0",
+  "description": "Panel de consumo para Claude Code: coste por petición, coste de sesión, contexto disponible, herramientas usadas y tiempo de sesión.",
+  "types": "./types/index.d.ts"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "usage-board",
+  "owner": { "name": "germa" },
+  "metadata": { "description": "Tablero de consumo para agentes de código" },
+  "plugins": [{ "name": "claude-usage-dashboard", "source": "./mods/claude-code" }]
+}

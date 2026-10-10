@@ -1,0 +1,14 @@
+{
+  "_note": "USD por millón de tokens. Es una ESTIMACIÓN: editá los valores si cambian los precios. Los modelos van de lo más específico a lo más general: gana la primera coincidencia. `input` es el token de entrada sin caché; `cacheRead` y `cacheWrite` son lectura y escritura de caché. Un precio en null significa 'sin precio': el tablero muestra tokens pero no coste. Los valores marcados con `estimated: true` son supuestos (lectura de caché = 10% del input, escritura = 125%) y no precios publicados.",
+  "models": [
+    { "match": "fable-5|mythos-5", "label": "Claude Fable / Mythos 5.x", "input": 10, "output": 50, "cacheRead": 0.25, "cacheWrite": 12.5, "estimated": true, "context": 1000000 },
+    { "match": "opus-5-5", "label": "Claude Opus 5.5", "input": 4, "output": 20, "cacheRead": 0.2, "cacheWrite": 5, "estimated": true, "context": 1000000 },
+    { "match": "opus-5", "label": "Claude Opus 5", "input": 5, "output": 25, "cacheRead": 0.5, "cacheWrite": 6.25, "estimated": true, "context": 1000000 },
+    { "match": "opus-4", "label": "Claude Opus 4.x", "input": 5, "output": 25, "cacheRead": 0.5, "cacheWrite": 6.25, "estimated": true, "context": 1000000 },
+    { "match": "sonnet-5", "label": "Claude Sonnet 5.x", "input": 2, "output": 10, "cacheRead": 0.2, "cacheWrite": 2.5, "estimated": true, "context": 1000000 },
+    { "match": "sonnet-4", "label": "Claude Sonnet 4.x", "input": 3, "output": 15, "cacheRead": 0.3, "cacheWrite": 3.75, "estimated": true, "context": 1000000 },
+    { "match": "haiku-5", "label": "Claude Haiku 5.x", "input": 0.1, "output": 0.5, "cacheRead": 0.01, "cacheWrite": 0.125, "estimated": true, "context": 1000000 },
+    { "match": "haiku-4", "label": "Claude Haiku 4.x", "input": 1, "output": 5, "cacheRead": 0.1, "cacheWrite": 1.25, "estimated": true, "context": 200000 },
+    { "match": "^gpt-|^o[0-9]|codex", "label": "OpenAI / Codex (completar)", "input": null, "output": null, "cacheRead": null, "cacheWrite": null, "context": null }
+  ]
+}
