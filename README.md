@@ -58,11 +58,15 @@ devuelve sesiones en el formato de [`src/session.mjs`](src/session.mjs). Mirá
 [`src/adapters/index.mjs`](src/adapters/index.mjs). Gemini CLI y OpenCode guardan datos
 parecidos y son los candidatos naturales.
 
-## Mod de Claude Code
+## Mod de Claude Code (experimental)
+
+> **Experimental:** todavía no se ha confirmado que el panel se renderice en una
+> instalación real. Para uso fiable, usa el CLI o el tablero visual.
 
 [`mods/claude-code`](mods/claude-code) es un panel en vivo dentro de Claude Code
 (`/usage`). Solo ve la sesión en la que está corriendo, a diferencia del CLI, que
-ve todas las herramientas. Requiere una versión de Claude Code con soporte de mods.
+ve todas las herramientas. Requiere una versión de Claude Code con soporte de mods
+(las versiones antiguas, como la 2.1.97, no sirven).
 
 ```
 /plugin install claude-usage-dashboard --marketplace <usuario>/<repo>
